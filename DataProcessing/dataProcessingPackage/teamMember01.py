@@ -15,10 +15,11 @@ from collections import Counter
 
 class teamMember01:
     def print_something_interesting(self, data):
+        print("team member 01")
         state_counter = Counter([row['state'] for row in data])
         print("Top 5 most common states in the data:")
         for state, count in state_counter.most_common(5):
             print(f"{state}: {count} entries")
             
-        print("team member 01")
+        
 
