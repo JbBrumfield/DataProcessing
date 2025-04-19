@@ -12,6 +12,10 @@
 
 class teamMember02:
     def print_something_interesting(self, data):
+        """
+        Prints something interesting from the csv
+        @Returns the number of addresses that contain BLVD in them
+        """
         blvd_count = sum(1 for row in data if 'Blvd' in row['address'])
         print(f"Number of addresses containing 'Blvd': {blvd_count}")
         print("team member 02")

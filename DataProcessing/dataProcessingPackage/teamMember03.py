@@ -13,6 +13,10 @@
 
 class teamMember03:
     def print_something_interesting(self, data):
+        """
+        Prints something interesting from the csv file
+        @Returns all of the emails that end with .org
+        """
         org_email_count = sum(1 for row in data if row['email'].strip().endswith('.org'))
         print(f"Total emails ending in '.org': {org_email_count}")
         print("team member 03")
